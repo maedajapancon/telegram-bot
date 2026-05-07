@@ -455,7 +455,7 @@ async def answer_question(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     if not is_valid:
         retry_text = (
             f"{cleaned}\n\n"
-            f"{context.user_data['question_index'] + 1}/{len(context.user_data['questions'])} savol\n"
+            f"{context.user_data['question_index'] + 1}-savol\n"
             f"{question['prompt']}"
         )
         if question.get("options"):
@@ -510,7 +510,7 @@ async def finish_form(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
 
     await update.effective_message.reply_text(
         "Rahmat! Arizangiz qabul qilindi. Tez orada siz bilan bog‘lanamiz.\n\n"
-        "Yangi ariza yuborish uchun /start buyrug‘ini bosing.",
+        "Sizga 3 kun ichida javob bermasak, @maeda_jpn ga yozing.",
         reply_markup=ReplyKeyboardRemove(),
     )
 
