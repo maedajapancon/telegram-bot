@@ -372,7 +372,7 @@ async def ask_next_question(update: Update, context: ContextTypes.DEFAULT_TYPE) 
     idx = context.user_data["question_index"]
     total = len(questions)
 
-    text = f"{idx + 1}/{total} savol\n{question['prompt']}"
+    text = f"{idx + 1}-savol\n{question['prompt']}"
 
     if question.get("options"):
         await update.effective_message.reply_text(
