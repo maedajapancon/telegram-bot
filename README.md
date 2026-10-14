@@ -1,10 +1,14 @@
-# Telegram Consulting Bot (Uzbek)
+# Telegram Consulting Bot
 
-Ushbu loyiha O‘zbekistonlik talabalarga Yaponiyada o‘qish bo‘yicha ariza yig‘uvchi Telegram bot.
+Ushbu loyiha Yaponiyada o‘qish bo‘yicha xalqaro arizalarni yig‘uvchi Telegram bot.
+Bot English, Русский va O‘zbek tillarida ishlaydi.
 
 Bot imkoniyatlari:
+- Foydalanuvchidan til tanlashni so‘raydi
 - Foydalanuvchini bosqichma-bosqich savollar bilan olib boradi
-- Har bosqichda progress ko‘rsatadi (`3/8 savol`)
+- Har bosqichda savol raqamini ko‘rsatadi (`3-savol`, `3-question`, `3-вопрос`)
+- Arizachining davlatini so‘raydi
+- Onlayn yapon tili kurslari menyudan olib tashlangan
 - Yosh va yil uchun raqam tekshiradi
 - Yakunda arizani formatlab, professional guruhga yuboradi
 - `/start` bilan har doim qaytadan boshlash mumkin
